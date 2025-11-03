@@ -31,6 +31,7 @@ new RGBELoader()
   .load('https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/qwantani_moonrise_puresky_1k.hdr', (texture) => {
     const envMap = pmremGenerator.fromEquirectangular(texture).texture;
     scene.environment = envMap;
+    // scene.background = envMap;
     texture.dispose();
     pmremGenerator.dispose();
 
