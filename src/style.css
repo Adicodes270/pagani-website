@@ -1,29 +1,91 @@
 :root {
-  --bg-main:        #0a0a0a;           
-  --bg-gradient:    linear-gradient(135deg, #0a0a0a 0%, #111111 100%);
-  --text:           #ffffff;
-  
+  --bg-main: #0a0a0a;
+  --bg-gradient: linear-gradient(135deg, #0a0a0a 0%, #111111 100%);
+  --text: #ffffff;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Porsche Next', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Exo 2', sans-serif;
 
 }
 
 html,
 body {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 body {
-
   background: var(--bg-gradient);
   background-attachment: fixed;
   color: var(--text);
   min-height: 100vh;
+}
+
+nav {
+
+  
+  padding: 1rem 0.001rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  
+}
+
+.hero-section h1 {
+  max-width: 1000px;  
+  height: 165px; 
+  font-size: 4rem;
+}
+
+.hero-section h2 {
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 4rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+
+#canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+
 
 }
